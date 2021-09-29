@@ -16,12 +16,14 @@
         <q>Citation.</q>
         
         
-            <button class="accordion first-accordion">Identité</button>
-            <div class="panel">
-            <p>Prénom : Morgane</p>
-            <p>Nom : LAILLER</p>
-            <p>Date de naissance : 11/09/1981</p>
-            </div>
+            <article>
+                <button class="accordion first-accordion">Identité</button>
+                <div class="panel">
+                <p>Prénom : Morgane</p>
+                <p>Nom : LAILLER</p>
+                <p>Date de naissance : 11/09/1981</p>
+                </div>
+            </article>
         
         
             <button class="accordion">Parcours professionnel</button>
@@ -46,26 +48,26 @@
             </div>
       
     </main>
-    <!--<script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+    <script>
+        let accordion = document.getElementsByClassName("accordion");
+        
 
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-        panel.style.display = "none";
-        } else {
-        panel.style.display = "block";
+            /* Toggle between hiding and showing the active panel */
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+            });
         }
-        });
-        }
-    </script>-->
+    </script>
     
 </body>
 </html>

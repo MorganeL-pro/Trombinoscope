@@ -1,6 +1,3 @@
-body {
-  box-sizing: border-content;
-}
 main {
     display: flex;
     flex-direction: column;
@@ -18,13 +15,6 @@ q {
     font-size: 1.5rem;
 }
 
-article {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     font-size: 1.5rem;
@@ -40,9 +30,11 @@ article {
   .first-accordion {
     border-radius: 10px 10px 0 0;
   }
-  /*.last-accordion {
+  .last-accordion {
       border-radius: 0 0 10px 10px;
-  }*/
+  }
+
+
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active {
@@ -52,14 +44,11 @@ article {
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding-left: 18px;
-    width: 70%;
+    padding: 0 18px;
     background-color: white;
     display: none;
-    /*overflow: hidden;*/
-    transition: max-height 0.2s ease-out;
+    transition: 0.4s;
   }
-
 
 /* plus and minus signs in the accordion */
   .accordion:after {

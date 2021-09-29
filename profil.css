@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fit-picture {
+    width: auto;
+    height: 600px;
+    border-radius: 10px;
+}

@@ -5,13 +5,14 @@ main {
     align-content: center;
 }
 .fit-picture {
-    width: auto;
-    height: 600px;
+    width: 60%;
+    height: auto;
     border-radius: 50%;
     margin-bottom: 30px;
 }
 q {
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -42,9 +43,10 @@ q {
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
+    width: 70;
     background-color: white;
-    display: none;
-    overflow: hidden;
+    /*display: block;
+    overflow: hidden;*/
     transition: max-height 0.2s ease-out;
   }
 

@@ -9,6 +9,7 @@ main {
 }
 .fit-picture {
     width: 60%;
+    max-width: 350px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 30px;
@@ -20,6 +21,7 @@ q {
 
 article {
   width: 100%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,11 +54,11 @@ article {
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding-left: 18px;
+    padding-left: 20px;
     width: 70%;
     background-color: white;
     display: none;
-    /*overflow: hidden;*/
+    overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
 

@@ -1,77 +1,79 @@
+/**
+ * Generic Styling
+*/
 body {
-  box-sizing: border-content;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-.fit-picture {
-    width: 60%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 30px;
-}
-q {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
+  background: #eee;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  f
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 1.2rem; 
 }
 
-article {
-  width: 100%;
-  min-width: 300px;
+.profile {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    font-size: 1.5rem;
-    background-color: #f2eeff;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 70%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  .first-accordion {
-    border-radius: 10px 10px 0 0;
-  }
-  /*.last-accordion {
-      border-radius: 0 0 10px 10px;
-  }*/
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active {
-    background-color: #3a1c40;
-    color: white;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding-left: 20px;
-    width: 70%;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
+img {
+ width: 50%;
+ height: auto;
+ border-radius: 50%;
+}
+
+/**
+* Tabs
+*/
+.tabs {
+display: flex;
+flex-wrap: wrap; 
+}
+
+.tabs label {
+order: 1; // Put the labels first
+display: block;
+padding: 1rem 2rem;
+margin-right: 0.2rem;
+cursor: pointer;
+background: #90CAF9;
+font-weight: bold;
+transition: background ease 0.2s;
+}
+.tabs .tab {
+order: 99; // Put the tabs last
+flex-grow: 1;
+width: 100%;
+display: none;
+padding: 1rem;
+background: #fff;
+}
+.tabs input[type="radio"] {
+display: none;
+}
+.tabs input[type="radio"]:checked + label {
+background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+display: block;
+}
 
 
-/* plus and minus signs in the accordion */
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+
+
+@media (max-width: 45em) {
+.tabs .tab,
+.tabs label {
+  order: initial;
+}
+.tabs label {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 0.2rem;
+}
+}
+

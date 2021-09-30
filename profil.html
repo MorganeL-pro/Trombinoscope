@@ -5,76 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Prénom NOM</title>
+    <title>Wild Code School - Promotion remote fr septembre 2021</title>
 </head>
 <body>
     <header>
     </header>
-    <main>
-        <img class="fit-picture" src="./photos/Morgane-profil.png" alt="Morgane Lailler profile picture">
-        
-        <q>Citation.</q>
-        
-        
-            <article>
-                <button class="accordion first-accordion">Identité</button>
-                <div class="panel">
-                <p>Prénom : Morgane</p>
-                <p>Nom : LAILLER</p>
-                <p>Date de naissance : 11/09/1981</p>
-                </div>
-            </article>
-        
-            <article>
-                <button class="accordion">Parcours professionnel</button>
-                <div class="panel">
-                <p>Lorem ipsum...</p>
-                </div>
-            </article>  
-        
+    <section class="profile">
+        <img src="./photos/Morgane-profil.png" alt="Profil picture">
+        <q>Citation</q>
+    </section>
+    
+    <section class='tabs'>
+
+        <input type="radio" name="tabs" id="tabone" ckecked="checked">
+        <label for="tabone">Général</label>
+        <div class="tab">
+            <p>Nom : LAILLER</p>
+            <p>Prénom : Morgane</p>
+            <p>Date de naissance : 11/09/1981</p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Parcours professionnel</label>
+        <div class="tab">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sequi repellendus eius architecto ullam beatae harum cumque commodi reiciendis iste quam dolorem, soluta aspernatur, dolor qui? Expedita consequuntur tenetur nostrum?</p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Compétences</label>
+        <div class="tab">
+            <h2>Hard skills :</h2>
+            <ul>
+                <li>Anglais</li>
+                <li>Orthographe</li>
+                <li>HTML/CSS</li>
+            </ul>
+            <h2>Soft skills :</h2>
+            <ul>
+                <li>Curiosité</li>
+                <li>Sens de l'organisation</li>
+                <li>Autonomie</li>
+            </ul>
+        </div>
+
+        <input type="radio" name="tabs" id="tabfour">
+        <label for="tabfour">Fun</label>
+        <div class="tab">
+            <h2>Tes centres d'intérêts :</h2>
+            <ul>
+                <li>Lecture (SF, fantasy, histoire)</li>
+                <li>Jeux vidéos (Xbox, PC, Switch)</li>
+                <li>Cinéma (coréen notamment)</li>
+            </ul>
+            <h2>Ce que tu détestes le plus :</h2>
+            <ul>
+                <li>Perdre</li>
+                <li>Attendre</li>
+                <li>Courir</li>
+            </ul>
+            <h2>Le personnage auquel tu t'identifies le plus :</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Cassandre : personne ne l'écoute alors qu'elle a toujours raison</figcaption>
+            </figure>
             
-            <article>
-                <button class="accordion">Compétences</button>
-                <div class="panel">
-                <p>Lorem ipsum...</p>
-                </div>
-           </article>  
-            
-            <article>
-                <button class="accordion">Fun</button>
-                <div class="panel">
-                <p>Lorem ipsum...</p>
-                </div>
-            </article>
+        </div>
 
-            <article>
-                <button class="accordion last-accordion">Contacts</button>
-                <div class="panel">
-                <p>Lorem ipsum...</p>
-                </div>
-            </article>
-      
-    </main>
-    <script>
-        let accordion = document.getElementsByClassName("accordion");
-        
+        <input type="radio" name="tabs" id="tabfive">
+        <label for="tabfive">Contacts</label>
+        <div class="tab">
+            <p>LinkedIn</p>
+            <p>GitHub</p>
+            <p>Site web</p>
+        </div>
 
-        for (let i = 0; i < accordion.length; i++) {
-            accordion[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-            });
-        }
-    </script>
+    </section>
     
 </body>
 </html>

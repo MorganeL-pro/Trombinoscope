@@ -1,8 +1,4 @@
-/**
- * Generic Styling
-*/
-
-
+/* Section profile picture + quote */
 .profile {
   display: flex;
   flex-direction: column;
@@ -36,7 +32,7 @@ q {
 
  /* Grid mobile*/
 
- .grid {
+ .gridAccordion {
    display:grid;
    grid-template-columns: 1fr;
    grid-template-rows: 50px 1fr 50px  1fr 50px  1fr 50px  1fr 50px  1fr;
@@ -114,6 +110,8 @@ q {
 .visible {
   display: block;
 }
+
+/* Figure Elt in Fun section */
 figure {
   display:flex;
   flex-direction: column;
@@ -131,31 +129,45 @@ figcaption {
   border-radius: 10px;
 }
 
-#conteneurLogoSNS li{
+/* logo contacts */
+#conteneurLogoSNS{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+}
+#conteneurLogoSNS li {
+  list-style: none;
 }
 #logoSNS {
   width: 50px;
   height: auto;
+  padding: 15px;
 }
-
+.question {
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
 /* Media queries - change grid */
  @media screen and (min-width: 768px) {
-
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .profile {
     flex-direction: row;
     justify-content: space-around;
   }
   .profile-picture {
-    width: 20%;
+    width: 30%;
   }
   q {
     font-size: 2rem;
   }
-  .grid {
+  .gridAccordion {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 70px 1fr;
   } 
@@ -215,5 +227,18 @@ figcaption {
     background-color: #f2eeff;
     flex-direction: row;
     justify-content: space-around;
+  }
+  #conteneurLogoSNS {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .profile-picture {
+    width: 25%;
   }
 }

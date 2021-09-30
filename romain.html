@@ -12,17 +12,22 @@
     </header>
     <section class="profile">
         <img src="./photos/Morgane-profil.png" alt="Profil picture" class="profile-picture">
-        <q>Chaud patate !</q>
+            <div id="anecdote">
+                <q class="anecdote"> "Les anecdotes de Romain : "
+                </q>
+                <input type="button" id="buttonAnecdote" value="Cliquer pour une anecdote">
+            </div>
+       
     </section>
     
-    <section class='gridAccordion'>
+    <section class='grid'>
 
        
             <button class="accordion grid-items-label1">Identité</button>
             <div class="grid-items">
-                <p><span class="bold">Prénom :</span> Morgane</p>
-                <p><span class="bold">Nom :</span> LAILLER</p>
-                <p><span class="bold">Date de naissance :</span> 11/09/1981</p>
+                <p>Prénom : Morgane</p>
+                <p>Nom : LAILLER</p>
+                <p>Date de naissance : 11/09/1981</p>
             </div>
      
             <button class="accordion grid-items-label2">Parcours professionnel</button>
@@ -87,5 +92,6 @@
             });
         }
     </script>
+    <script src="anecdote.js"></script>
 </body>
 </html>

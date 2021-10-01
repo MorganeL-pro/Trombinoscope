@@ -1,15 +1,100 @@
 /* Variables*/
 :root {
-  --dark: #3a1c40;
+  --dark: rgb(58, 28, 64);
   --light: #f2eeff;
 }
 
+/* body */
+body {
+  margin: 0px;
+}
 
-/* Section profile picture + quote */
+/* header style */
+header {
+  display: flex;
+  background-color: var(--dark);
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+  border-radius: 0px 0 20px 20px;
+}
+
+.logo {
+  height: 9.3rem;
+  width: 9.3rem;
+}
+
+.teamJupiter {
+  font-size: 3.5rem;
+  color: white;
+  margin-top: 0px;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Main section in index.html */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.photo_groupe {
+  width: 70%;
+  min-width: 250px;
+  max-width: 820px;
+}
+
+h3{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 0.9rem;;
+}
+
+.presentation {
+  text-align: justify;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.wildCodeSchool{
+  text-decoration: none;
+  color: rgb(58, 28, 64);
+  font-weight: bold;
+}
+
+.bouton_purple {
+  font-weight: bold;
+  background: var(--dark);
+  border-radius: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Section profile picture + quote in profil.html */
+
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;;
   margin-bottom: 30px;;
   min-width: 250px;
 }
@@ -26,25 +111,27 @@
   flex-direction: column;
   align-items: center;
 }
+
 q {
    font-size: 1.5rem;
    margin-bottom: 20px;
- }
+}
 
  #buttonAnecdote {
    width: 200px;
    padding: 10px;
    border-radius: 10px;
- }
+}
 
- /* Grid mobile*/
+/* Grid mobile*/
 
- .gridAccordion {
+.gridAccordion {
    display:grid;
    grid-template-columns: 1fr;
    grid-template-rows: 50px 1fr 50px  1fr 50px  1fr 50px  1fr 50px  1fr;
    min-width: 250px;
- }
+}
+
 .accordion {
   font-size: 1.5em;
   padding: 5px;
@@ -53,67 +140,80 @@ q {
 }
 
 
- /* area for grid-items-label Mobile */
+/* area for grid-items-label Mobile */
+
  .grid-items-label1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   border-radius: 10px 10px 0 0;
 }
+
 .grid-items-label2 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
 }
+
 .grid-items-label3 {
   grid-column: 1 / 2;
   grid-row: 5 / 6;
 }
+
 .grid-items-label4 {
   grid-column: 1 / 2;
   grid-row: 7 / 8;
 }
+
 .grid-items-label5 {
   grid-column: 1 / 2;
   grid-row: 9 / 10;
 }
 
 /* area for grid-items Mobile */
+
 .grid-items:nth-of-type(1) {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   text-align: center;
 }
+
 .grid-items:nth-of-type(2) {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
+
 .grid-items:nth-of-type(3) {
   grid-column: 1 / 2;
   grid-row: 6 / 7;
 }
+
 .grid-items:nth-of-type(4) {
   grid-column: 1 / 2;
   grid-row: 8 / 9;
 }
+
 .grid-items:nth-of-type(5) {
   grid-column: 1 / 2;
   grid-row: 10 / 11;
 }
+
  /* Grid Items style */
 
- button:hover {
+button:hover {
    background-color: var(--dark);
    color: white;
    transition: 0.4s;
- }
+}
 
- .grid-items {
+.grid-items {
    background-color: var(--light);
    display: none;
    padding: 15px;
    font-size: 1.5em;
    border-radius: 0;
- }
+}
+
  /* class visible makes the accordion to show the correct grid-item */
+
 .visible {
   display: block;
 }
@@ -127,16 +227,19 @@ figure {
   padding: 20px;
   border-radius: 10px;
 }
+
 figcaption {
   margin-top: 10px;
   font-size: 1.4rem;
 }
+
 #character {
   width: 50%;
   border-radius: 10px;
 }
 
 /* logo contacts */
+
 #conteneurLogoSNS{
   display: flex;
   flex-direction: column;
@@ -144,75 +247,133 @@ figcaption {
   align-items: center;
   padding-left: 0;
 }
+
 #conteneurLogoSNS li {
   list-style: none;
 }
+
 #logoSNS {
   width: 50px;
   height: auto;
   padding: 15px;
 }
+
 .question {
   font-weight: bold;
 }
+
 .bold {
   font-weight: bold;
 }
-/* Media queries - change grid */
+
+
+/* Footer style*/
+
+footer  {
+  margin-top: 30px;
+  margin-bottom: 0;
+  height : 50px;
+  background-color: var(--dark);
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.footer{
+  padding: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+
  @media screen and (min-width: 768px) {
-  body {
+
+  body{
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  header{
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-around;
+    padding-left: 10px;
+    align-content: center;
+    align-items: center;
+  }
+
+  .teamJupiter {
+    margin-top: 18px;
+    margin-right: 10px;
+  }
+
+  .presentation{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .profile {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .profile-picture {
     width: 30%;
   }
+  
   q {
     font-size: 2rem;
   }
+
+  /* change grid */
   .gridAccordion {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 70px 1fr;
   } 
+
   .grid-items-label1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     border-radius: 10px 0 0 0;
   }
+
   .grid-items-label2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
+
   .grid-items-label3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
   }
+
   .grid-items-label4 {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
   }
+
   .grid-items-label5 {
     grid-column: 5 / 6;
     grid-row: 1 / 2;
     border-radius: 0 10px 0 0;
   }
- 
+
   .grid-items:nth-of-type(1) {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
   }
+
   .grid-items:nth-of-type(2) {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
   }
+
   .grid-items:nth-of-type(3) {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
   }
+
   .grid-items:nth-of-type(4) {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
@@ -221,29 +382,45 @@ figcaption {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
   }
+
   .grid-items {
     grid-column: 1 / 6;
     grid-row: 2 / -1;
     padding: 20px;
   }
+
   #character {
     width: 15%;
     order: 2;
   }
+
   figure {
     background-color: var(--light);
     flex-direction: row;
     justify-content: space-around;
   }
+
   #conteneurLogoSNS {
     flex-direction: row;
     justify-content: center;
   }
+
+  footer{
+    text-align:center;
+    bottom:0;
+    width: 100%;
+    display:inline-block;
+    vertical-align:top;
+    border-radius: 20px;
+  }
 }
+
+
 @media screen and (min-width: 1600px) {
   body {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .profile-picture {
     width: 25%;

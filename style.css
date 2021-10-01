@@ -1,3 +1,10 @@
+/* Variables*/
+:root {
+  --dark: #3a1c40;
+  --light: #f2eeff;
+}
+
+
 /* Section profile picture + quote */
 .profile {
   display: flex;
@@ -42,7 +49,7 @@ q {
   font-size: 1.5em;
   padding: 5px;
   border-radius: none;
-  background-color: #f2eeff;
+  background-color: var(--light);
 }
 
 
@@ -94,13 +101,13 @@ q {
  /* Grid Items style */
 
  button:hover {
-   background-color: #3a1c40;
+   background-color: var(--dark);
    color: white;
    transition: 0.4s;
  }
 
  .grid-items {
-   background-color: #f2eeff;
+   background-color: var(--light);
    display: none;
    padding: 15px;
    font-size: 1.5em;
@@ -224,7 +231,7 @@ figcaption {
     order: 2;
   }
   figure {
-    background-color: #f2eeff;
+    background-color: var(--light);
     flex-direction: row;
     justify-content: space-around;
   }

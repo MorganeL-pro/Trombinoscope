@@ -49,6 +49,7 @@ h2 {
   align-items: center;
   margin-top: 30px;
 }
+
 .hidden {
   display: none; /*allows to hide the h2 for check the W3C*/
 }

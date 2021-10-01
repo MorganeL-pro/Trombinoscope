@@ -30,4 +30,4 @@ let boxAnecdote = document.querySelector(".anecdote");
 let bouttonAnecdote = document.querySelector("#buttonAnecdote");
 
 bouttonAnecdote.addEventListener("click", textAnecdote);
-  
+dev

@@ -5,6 +5,7 @@ body {
 
 /*=========Style de mon haeder ==========*/
 
+
 header {
     display: flex;
     background-color: rgb(58, 28, 64);
@@ -62,10 +63,18 @@ h3{
 
 .presentation {
     text-align: justify;
+    margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: rgb(242, 238, 255);
     padding: 10px;
+    border-radius: 20px;
+}
+
+.wildCodeSchool{
+    text-decoration: none;
+    color: rgb(58, 28, 64);
+    font-weight: bold;
 }
 
 .bouton_purple {
@@ -83,7 +92,7 @@ h3{
 
 
 footer  {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0;
     height : 50px;
     background-color: rgb(58, 28, 64);

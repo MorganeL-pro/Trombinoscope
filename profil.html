@@ -18,8 +18,8 @@
     <section class='gridAccordion'>
 
        
-            <button class="accordion grid-items-label1">Identité</button>
-            <div class="grid-items">
+            <button class="accordion grid-items-label1" >Identité</button>
+            <div class="grid-items visible">
                 <p><span class="bold">Prénom :</span> Morgane</p>
                 <p><span class="bold">Nom :</span> LAILLER</p>
                 <p><span class="bold">Date de naissance :</span> 11/09/1981</p>
@@ -69,10 +69,12 @@
     </section>
     
    <script>
+        
+        /* make the click on the button open the grid-items underneath*/
         let accordion = document.querySelectorAll(".accordion");
         for (let i = 0; i < accordion.length; i++) {
             accordion[i].addEventListener("click", (e) => {
-                //e.target.style.backgroundColor = "#3a1c40";
+               
                 let sibling = e.target.nextElementSibling;
 
                 let panels = document.querySelectorAll(".grid-items");

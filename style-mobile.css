@@ -1,0 +1,23 @@
+.gridAccordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2eeff;
+}
+
+.accordion, .grid-items {
+   
+}
+
+.accordion {
+    width: 100%;
+    padding: 20px;
+    border: 0.5px solid var(--dark);
+}
+
+.grid-items-label1 {
+    border-radius: 10px 10px 0 0;
+}
+
+
+

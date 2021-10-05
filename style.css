@@ -12,11 +12,11 @@ body {
   height: 100vh;
   background-image: url("assets/desature.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 
-/*=========Style haeder ==========*/
+/*=========Style header ==========*/
 
 
 header {
@@ -175,7 +175,7 @@ q {
 }
 
 /* Figure Elt in Fun section */
-figure {
+.perso {
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -184,7 +184,7 @@ figure {
   border-radius: 10px;
 }
 
-figcaption {
+.persoLegend {
   margin-top: 10px;
   font-size: 1.4rem;
 }
@@ -221,6 +221,69 @@ figcaption {
 .bold {
   font-weight: bold;
 }
+
+
+/*======style trombino=====*/
+
+
+.grid-formateur{
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display:grid;
+  justify-content: left;
+  background-color: rgb(247, 239, 247);
+  border-radius: 20px;
+}
+
+
+.grid {
+  max-width: 1422px;
+  width: 80%;
+  height: auto;  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30%);
+  grid-gap: 50px;
+  border-radius: 20px;
+  background: var(--light);
+  margin:4rem auto;
+  padding: 1rem;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.trombino{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--light);
+}
+
+.grid_img{
+  justify-content: center;
+  border-radius: 50%;
+  width:80%;
+  min-width: 130px;
+  margin-bottom: 15px;
+}
+
+.romain{
+  justify-content: center;
+  width:150px;
+  height:150px;
+}
+
+.legend{
+  text-align:center;
+  font-size: 1rem;
+  font-weight:bold;
+  color:var(--dark);
+}
+
 
 
 /* ============Footer style=============*/

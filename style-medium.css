@@ -117,7 +117,7 @@
     order: 2;
   }
 
-  figure {
+  .perso {
     background-color: var(--light);
     flex-direction: row;
     justify-content: space-around;

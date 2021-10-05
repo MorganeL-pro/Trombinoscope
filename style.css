@@ -222,19 +222,46 @@ q {
   font-weight: bold;
 }
 
+.promo{
+  /*color: white;*/
+  font-size: 2rem;
+}
+
 
 /*======style trombino=====*/
 
 
-.grid-formateur{
-  max-width: 400px;
+.formateur{
+  max-width: 600px;
   width: 80%;
   height: auto;
-  margin: 20px auto;
-  display:grid;
-  justify-content: left;
-  background-color: rgb(247, 239, 247);
+  margin: 40px auto;
+  display:flex;
+  justify-content: space-around;
+  background-color: var(--light);
   border-radius: 20px;
+  align-items: center;
+}
+
+.romain{
+  justify-content: center;
+  width:80%;
+  border-radius: 20px 0 0 20px;
+  min-width: 163px;
+}
+
+.legendeRomain{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2;
+  color: var(--dark);
+  text-align: center;
+  margin-right: 20px;
+}
+
+.lienRomain{
+  display: flex;
+  align-items: stretch;
 }
 
 
@@ -243,8 +270,8 @@ q {
   width: 80%;
   height: auto;  
   display: grid;
-  grid-template-columns: repeat(auto-fill, 30%);
-  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 60px;
   border-radius: 20px;
   background: var(--light);
   margin:4rem auto;
@@ -263,27 +290,26 @@ q {
   background-color: var(--light);
 }
 
+figure.trombino>a{
+  display: flex;
+  justify-content: center;
+}
+
 .grid_img{
   justify-content: center;
   border-radius: 50%;
   width:80%;
+  max-width: 280px;
   min-width: 130px;
   margin-bottom: 15px;
 }
 
-.romain{
-  justify-content: center;
-  width:150px;
-  height:150px;
-}
-
 .legend{
-  text-align:center;
   font-size: 1rem;
   font-weight:bold;
   color:var(--dark);
+  text-align: center;
 }
-
 
 
 /* ============Footer style=============*/

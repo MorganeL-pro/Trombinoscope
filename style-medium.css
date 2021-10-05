@@ -29,6 +29,11 @@
     line-height: 1.5rem;
   }
 
+
+  .promo{
+    /*color: white;*/
+    font-size: 4.7rem;
+  }
 /* section profile */
 
   .profile {

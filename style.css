@@ -1,89 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+
+
 /* Variables*/
 :root {
-  --dark: rgb(58, 28, 64);
-  --light: #f2eeff;
+  --dark: rgb(58, 28, 64, 0.9);
+  --light: rgb(242, 238, 255);
+  --darkHeadFoot: rgba(84, 34, 99, 0.795);
 }
-
 
 /* body */
 body {
   margin: 0px;
   height: 100vh;
-  box-sizing: border-box;
+  background-image: url("assets/desature.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  font-family: sans-serif;
 }
 
-.gridAccordion, .profile {
-  background-color: cornsilk;
-}
-/* header style */
+
+/*=========Style header ==========*/
+
+
 header {
   display: flex;
-  background-color: var(--dark);
+  background-color: var(--darkHeadFoot);
   flex-direction: column;
   text-align: center;
   padding-bottom: 10px;
-  border-radius: 0px 0 20px 20px;
 }
 
 .logo {
-  height: 9.3rem;
   width: 9.3rem;
+  margin-left: 10px;
 }
 
 .teamJupiter {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: white;
   margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Karla', sans-serif;
 }
 
-h1 {
-  color: white;
-  font-size: 1.5rem;
-}
+/* =============Main section in index.html========== */
 
-h2 {
-  color: white;
-  font-size: 1.5rem;
-}
 
-/* Main section in index.html */
-
-.main {
+.centre {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  background-color: var(--light);
+  border-radius: 5px;
 }
 
-.hidden {
-  display: none; /*allows to hide the h2 for check the W3C*/
+.promoTitre{
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-family: 'Karla', sans-serif;
 }
 
 .photo_groupe {
   width: 70%;
   min-width: 250px;
   max-width: 820px;
-}
-
-h3{
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 0.9rem;;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .presentation {
   text-align: justify;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  background-color: var(--light);
-  padding: 20px;
+  margin: 25px 15px 30px 15px;
+  padding: 10px;
   border-radius: 20px;
 }
 
 .wildCodeSchool{
   text-decoration: none;
-  color: rgb(58, 28, 64);
+  color: var(--dark);
   font-weight: bold;
 }
 
@@ -96,8 +96,26 @@ h3{
   padding: 10px;
   color: white;
   text-decoration: none;
+  margin-bottom: 10px;
+
 }
 
+.bouton_purple:hover{
+  background-color: var(--light);
+  color: var(--dark);
+  border: solid 1px var(--dark);
+  
+}
+
+.hidden{
+  display: none;
+}
+
+.retour{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 /* Section profile picture + quote in profil.html */
 
 .profile {
@@ -125,6 +143,8 @@ h3{
 q {
    font-size: 1.5rem;
    margin-bottom: 20px;
+   color: white;
+   font-weight: bold;
 }
 
  #buttonAnecdote {
@@ -148,14 +168,12 @@ q {
     font-size: 1.5em;
     border-radius: 0;
  }
+
  .accordion {
   font-size: 1.5em;
   border-radius: none;
   background-color: var(--light);
 }
-
-
-
 
  /* class visible makes the accordion to show the correct grid-item */
 
@@ -164,7 +182,7 @@ q {
 }
 
 /* Figure Elt in Fun section */
-figure {
+.perso {
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +191,7 @@ figure {
   border-radius: 10px;
 }
 
-figcaption {
+.persoLegend {
   margin-top: 10px;
   font-size: 1.4rem;
 }
@@ -211,39 +229,110 @@ figcaption {
   font-weight: bold;
 }
 
+.promo{
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+}
 
-/* Footer style*/
+
+/*======style trombino=====*/
+
+
+.formateur{
+  display:flex;
+  justify-content: space-around;
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+  background-color: var(--light);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.romain{
+  width:80%;
+  border-radius: 20px 0 0 20px;
+  min-width: 163px;
+}
+
+.legendeRomain{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2;
+  color: var(--dark);
+  text-align: center;
+  margin-right: 50px;
+}
+
+.lienRomain{
+  display: flex;
+  align-items: stretch;
+}
+
+
+.grid {
+  max-width: 1422px;
+  width: 80%;
+  height: auto;  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 60px;
+  border-radius: 20px;
+  background: var(--light);
+  margin:4rem auto;
+  padding: 1rem;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.trombino{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--light);
+}
+
+figure.trombino>a{
+  display: flex;
+  justify-content: center;
+}
+
+.grid_img{
+  justify-content: center;
+  border-radius: 50%;
+  width:80%;
+  max-width: 280px;
+  min-width: 130px;
+  margin-bottom: 15px;
+}
+
+.legend{
+  font-size: 1rem;
+  font-weight:bold;
+  color:var(--dark);
+  text-align: center;
+}
+
+
+/* ============Footer style=============*/
 
 footer  {
   margin-top: 30px;
   margin-bottom: 0;
   height : 50px;
-  background-color: var(--dark);
+  background-color: var(--darkHeadFoot);
   color: white;
-  border-radius: 20px 20px 0px 0px;
 }
 
 .footer{
   padding: 10px;
   font-size: 0.8rem;
   text-align: center;
-  margin-top: 8px;
   margin-bottom: 0;
-}
-
-
- @media screen and (min-width: 768px) {
-
-  
-}
-
-@media screen and (min-width: 1600px) {
-  body {
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .profile-picture {
-    width: 25%;
-  }
 }

@@ -1,4 +1,8 @@
-body{
+
+/*========== @media > 768px =========*/
+
+
+  body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,21 +13,28 @@ body{
   header{
     flex-direction: row;
     padding-top: 15px;
-    justify-content: space-around;
     padding-left: 10px;
     align-content: center;
     align-items: center;
+    border-radius: 0px 0 20px 20px;
   }
 
   .teamJupiter {
-    margin-top: 18px;
-    margin-right: 10px;
+    text-align: center;
+    margin-left: 25%;
   }
 
   .presentation{
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+
+  .promo{
+    color: white;
+    font-size: 4.7rem;
+  }
+/* section profile */
 
   .profile {
     flex-direction: row;
@@ -111,7 +122,7 @@ body{
     order: 2;
   }
 
-  figure {
+  .perso {
     background-color: var(--light);
     flex-direction: row;
     justify-content: space-around;
@@ -122,6 +133,9 @@ body{
     justify-content: center;
   }
 
+/*===== footer=====*/
+
+
   footer{
     text-align:center;
     bottom:0;
@@ -129,4 +143,31 @@ body{
     display:inline-block;
     vertical-align:top;
     border-radius: 20px 20px 0 0;
+  }
+
+
+  /*========== @media > 1442px =========*/
+
+
+  @media screen and (min-width: 1422px){
+      body{
+          margin-left: 10%;
+          margin-right: 10%;
+      }
+
+      .profile-picture {
+        width: 25%;
+      }
+  }
+  
+  /*========== @media > 2050px =========*/
+  
+  
+  @media screen and (min-width: 2050px){
+      body{
+          width: 1435px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  
   }

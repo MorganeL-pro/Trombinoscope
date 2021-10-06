@@ -76,7 +76,7 @@ header {
 
 .presentation {
   text-align: justify;
-  margin: 25px 15px 30px 15px;
+  margin: 20px 60px 20px 60px;
   padding: 10px;
   border-radius: 20px;
 }
@@ -96,7 +96,7 @@ header {
   padding: 10px;
   color: white;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 
 }
 
@@ -139,6 +139,23 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.anecdote {
+  font-size: 1.2rem;
+  color: var(--dark);
+  text-align: justify;
+  padding: 20px;
+}
+
+.anecdoteDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 30px;
+  background-color: var(--light);
+  border-radius: 10px;
+  min-width: 350px;
+}
 
 q {
    font-size: 1.5rem;
@@ -151,6 +168,16 @@ q {
    width: 200px;
    padding: 10px;
    border-radius: 10px;
+   margin-bottom: 20px;
+   background-color: var(--dark);
+   border: none;
+   color: var(--light);
+   font-weight: bold;
+}
+#buttonAnecdote:hover {
+  background-color: #534e77;
+  color: white;
+  transition: 0.4s;
 }
 
   /* Section accordion style - commun -*/
@@ -165,7 +192,7 @@ q {
     background-color: var(--light);
     display: none;
     padding: 30px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 0;
  }
 
@@ -173,6 +200,7 @@ q {
   font-size: 1.5em;
   border-radius: none;
   background-color: var(--light);
+
 }
 
  /* class visible makes the accordion to show the correct grid-item */

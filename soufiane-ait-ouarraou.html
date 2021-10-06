@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="style-medium.css">
+    <link rel="stylesheet" media='screen and (max-width: 767px)' href="style-mobile.css">
+    <title>Wild Code School - Promotion remote fr septembre 2021</title>
+</head>
+<body>
+    
+    <!-- Dans le Header on trouve le logo / nom de l'école / promotion-->
+    <header>
+        <a href="index.html" ><img class="logo" src="assets/logo.png" alt="logo wild code school" /></a>
+        
+        <h1 class="teamJupiter">Team Jupiter</h1>
+        
+    </header>
+
+    
+    <!-- Section for profile picture and quote-->
+    <section >
+        <h2 class="promo">Soufiane AÏT OUARRAOU</h2>
+        <div class="profile">
+            <img src="./photos/soufiane-ait-ouarraou.png" alt="Profil picture" class="profile-picture">
+            <q>Baw</q>
+        </div>
+    </section>
+    
+    <!-- Section for grid parts-->
+    <section class='gridAccordion'>
+            <h2 class="hidden">Fiche profil</h2>
+            <button class="accordion grid-items-label1" >Identité</button>
+            <div class="grid-items visible">
+                <p><span class="bold">Prénom :</span> Soufiane</p>
+                <p><span class="bold">Nom :</span> AÏT OUARRAOU</p>
+                <p><span class="bold">Date de naissance :</span> 03/11/1995</p>
+            </div>
+     
+            <button class="accordion grid-items-label2">Parcours professionnel</button>
+            <div class="grid-items">
+                <p class="question">Que faisais-tu avant la formation à la Wild Code School ?</p>
+                <p class="answer">Etudes de commerce puis réceptionniste</p>
+                <p class="question">Pourquoi as-tu choisi de faire cette formation ?</p>
+                <p class="answer">Pour apprendre à programmer et exploiter ma créativité.</p>
+                <p class="question">Comment imagines-tu ton avenir professionnel à l'issue de la formation ?</p>
+                <p class="answer">A l'étranger.</p>
+            </div>
+       
+            <button class="accordion grid-items-label3">Compétences</button>
+            <div class="grid-items">
+                <p class="question">Cite trois de tes hard skills :</p>
+                <p class="answer">&rarr; Graphisme, Anglais, Boxing.</p>
+                <p class="question">Cite trois de tes soft skills :</p>
+                <p class="answer">&rarr; Penser « out of the box », conscience de soi, convaincre.</p>
+            </div>
+
+            <button class="accordion grid-items-label4">Fun</button>
+            <div class="grid-items">
+                <p class="question">Quels sont tes principaux centres d'intérêt</p>
+                <p class="answer">&rarr; Musique (Hip-hop, RnB, Jazz) , Psychologie, Histoire des civilisations.</p>
+                <p class="question">Trois choses que tu détestes le plus au monde ?</p>
+                <p class="answer">&rarr; TPMP au bout de 5 minutes.</p>
+                <p class="question">Quel est le personnage (réel ou fictif) auquel tu t'identifies le plus (pense à tes séries préférées par exemple) ?</p>
+                <figure class="perso">
+                    <img src="./assets/Dwayne-Johnson.jpg" alt="Dwayne-Johnson" id="character">
+                    <figcaption class="persoLegend">The Rock (obligé c'est mon idole depuuuis)</figcaption>
+                </figure>
+            </div>
+
+            <button class="accordion grid-items-label5">Contacts</button>
+            <div class="grid-items">
+                <ul id="conteneurLogoSNS">
+                <li><a href="https://www.linkedin.com/in/soufiane-ait/" target='_blank'><img src="./assets/240px-LinkedIn_logo_initials.png" alt="logo linkedin" class="logoSNS"></a></li>
+                <li><a href="https://github.com/soufcod3" target='_blank'><img src="./assets/480px-Octicons-mark-github.svg.png" alt="logo Github" class="logoSNS"></a></li>
+                </ul>
+            </div>
+
+    </section>
+
+    <section class="retour">
+        <h2 class="hidden">Fiche profil</h2>
+        <a href="trombino.html"  class="bouton_purple">Retour au trombinoscope</a>
+    </section>
+     <!--Dans le footer : les noms des createurs du site-->
+     <footer>
+        <p class="footer">&copy;Maiwenn Beloy, Stecie Bien-Aimé, Caroline Crépin, Bruno Fernandes, Morgane Lailler</p>
+    </footer>
+    
+    <!-- JavaScript-->
+   <script>
+        
+        /* make the click on the button open the grid-items underneath*/
+        let accordion = document.querySelectorAll(".accordion");
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", (e) => {
+               
+                let sibling = e.target.nextElementSibling;
+
+                let panels = document.querySelectorAll(".grid-items");
+                sibling.classList.toggle('visible');
+
+                for (let j = 0; j < panels.length; j++) {
+                    if (panels[j] !== sibling) {
+                        panels[j].className = 'grid-items';
+                      
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

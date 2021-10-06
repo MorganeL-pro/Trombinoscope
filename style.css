@@ -8,6 +8,7 @@
   --dark: rgb(58, 28, 64, 0.9);
   --light: rgb(242, 238, 255);
   --darkHeadFoot: rgba(84, 34, 99, 0.795);
+  --titleFont: 'Karla', sans-serif;
 }
 
 /* body */
@@ -44,7 +45,7 @@ header {
   margin-bottom: 0px;
   text-align: center;
   padding-bottom: 10px;
-  font-family: 'Karla', sans-serif;
+  font-family: var(--titleFont);
 }
 
 /* =============Main section in index.html========== */
@@ -63,7 +64,7 @@ header {
   text-align: center;
   font-size: 2.5rem;
   color: var(--dark);
-  font-family: 'Karla', sans-serif;
+  font-family: var(--titleFont);
 }
 
 .photo_groupe {
@@ -97,17 +98,15 @@ header {
   color: white;
   text-decoration: none;
   margin-bottom: 25px;
-
 }
 
 .bouton_purple:hover{
   background-color: var(--light);
   color: var(--dark);
   border: solid 1px var(--dark);
-  
 }
 
-.hidden{
+.hidden{ /* Hide h2 for W3C */
   display: none;
 }
 
@@ -116,6 +115,7 @@ header {
   justify-content: center;
   margin-top: 20px;
 }
+
 /* Section profile picture + quote in profil.html */
 
 .profile {
@@ -128,14 +128,14 @@ header {
 }
 
 .profile-picture {
- width: 60%;
- height: auto;
- border-radius: 50%;
- margin-bottom: 30px;;
-}
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  }
 
 #romain {
-  width: 255px;
+   width: 255px; /* Stop Romain's picture to move along with anecdotes in Firefox */
 }
 
 #anecdote {
@@ -162,23 +162,23 @@ header {
 }
 
 q {
-   font-size: 1.5rem;
-   margin-bottom: 20px;
-   color: white;
-   font-weight: bold;
-   margin-left: 40px;
-   margin-right: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 30px;
 }
 
- #buttonAnecdote {
-   width: 200px;
-   padding: 10px;
-   border-radius: 10px;
-   margin-bottom: 20px;
-   background-color: var(--dark);
-   border: none;
-   color: var(--light);
-   font-weight: bold;
+#buttonAnecdote {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: var(--dark);
+  border: none;
+  color: var(--light);
+  font-weight: bold;
 }
 #buttonAnecdote:hover {
   background-color: #534e77;
@@ -186,30 +186,30 @@ q {
   transition: 0.4s;
 }
 
-  /* Section accordion style - commun -*/
+/* Section accordion style - commun -*/
 
-  button:hover {
-    background-color: var(--dark);
-    color: white;
-    transition: 0.4s;
- }
- 
- .grid-items {
-    background-color: var(--light);
-    display: none;
-    padding: 30px;
-    font-size: 1.2em;
-    border-radius: 0;
- }
+button:hover {
+  background-color: var(--dark);
+  color: white;
+  transition: 0.4s;
+}
 
- .accordion {
+.grid-items {
+  background-color: var(--light);
+  display: none;
+  padding: 30px;
+  font-size: 1.2em;
+  border-radius: 0;
+}
+
+.accordion {
   font-size: 1.5em;
   border-radius: none;
   background-color: var(--light);
 
 }
 
- /* class visible makes the accordion to show the correct grid-item */
+/* class visible makes the accordion to show the correct grid-item */
 
 .visible {
   display: block;
@@ -267,7 +267,7 @@ q {
   color: white;
   font-size: 4rem;
   text-align: center;
-  font-family: 'Karla', sans-serif;
+  font-family: var(--titleFont);
 }
 
 

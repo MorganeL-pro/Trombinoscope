@@ -1,10 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+
+
 /* Variables*/
 :root {
   --dark: rgb(58, 28, 64, 0.9);
   --light: rgb(242, 238, 255);
   --darkHeadFoot: rgba(84, 34, 99, 0.795);
 }
-
 
 /* body */
 body {
@@ -13,6 +17,7 @@ body {
   background-image: url("assets/desature.jpg");
   background-position: center;
   background-repeat: repeat-y;
+  font-family: sans-serif;
 }
 
 
@@ -33,18 +38,14 @@ header {
 }
 
 .teamJupiter {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: white;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
   padding-bottom: 10px;
+  font-family: 'Karla', sans-serif;
 }
-
-h1 {
-  font-size: 1.5rem;
-}
-
 
 /* =============Main section in index.html========== */
 
@@ -55,12 +56,14 @@ h1 {
   align-items: center;
   margin-top: 30px;
   background-color: var(--light);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
 }
 
-.promo{
+.promoTitre{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-family: 'Karla', sans-serif;
 }
 
 .photo_groupe {
@@ -68,12 +71,7 @@ h1 {
   min-width: 250px;
   max-width: 820px;
   margin-top: 10px;
-}
-
-h3{
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 0.9rem;;
+  border-radius: 5px;
 }
 
 .presentation {
@@ -99,6 +97,14 @@ h3{
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
+
+}
+
+.bouton_purple:hover{
+  background-color: var(--light);
+  color: var(--dark);
+  border: solid 1px var(--dark);
+  
 }
 
 .hidden{
@@ -162,6 +168,7 @@ q {
     font-size: 1.5em;
     border-radius: 0;
  }
+
  .accordion {
   font-size: 1.5em;
   border-radius: none;
@@ -223,8 +230,10 @@ q {
 }
 
 .promo{
-  /*color: white;*/
-  font-size: 2rem;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
 }
 
 
@@ -232,19 +241,18 @@ q {
 
 
 .formateur{
+  display:flex;
+  justify-content: space-around;
   max-width: 600px;
   width: 80%;
   height: auto;
   margin: 40px auto;
-  display:flex;
-  justify-content: space-around;
   background-color: var(--light);
   border-radius: 20px;
   align-items: center;
 }
 
 .romain{
-  justify-content: center;
   width:80%;
   border-radius: 20px 0 0 20px;
   min-width: 163px;
@@ -256,7 +264,7 @@ q {
   line-height: 2;
   color: var(--dark);
   text-align: center;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .lienRomain{

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="style-medium.css">
+    <link rel="stylesheet" media='screen and (max-width: 767px)' href="style-mobile.css">
+    <title>Wild Code School - Promotion remote fr septembre 2021</title>
+</head>
+<body>
+    
+    <!-- Dans le Header on trouve le logo / nom de l'école / promotion-->
+    <header>
+        <a href="index.html" ><img class="logo" src="assets/logo.png" alt="logo wild code school" /></a>
+        
+        <h1 class="teamJupiter">Team Jupiter</h1>
+        
+    </header>
+
+    
+    <!-- Section for profile picture and quote-->
+    <section >
+        <h2 class="promo">Stecie BIEN-AIMÉ</h2>
+        <div class="profile">
+            <img src="./photos/stecie-bien-aime.jpg" alt="Photo de Stecie Bien-Aimé" class="profile-picture">
+            <q>Voilà, voilà !!</q>
+        </div>
+    </section>
+    
+    <!-- Section for grid parts-->
+    <section class='gridAccordion'>
+            <h2 class="hidden">Fiche profil</h2>
+            <button class="accordion grid-items-label1" >Identité</button>
+            <div class="grid-items visible">
+                <p><span class="bold">Prénom :</span> Stecie</p>
+                <p><span class="bold">Nom :</span> BIEN-AIMÉ</p>
+                <p><span class="bold">Date de naissance :</span> 19/03/1988</p>
+            </div>
+     
+            <button class="accordion grid-items-label2">Parcours professionnel</button>
+            <div class="grid-items">
+                <p class="question">Que faisais-tu avant la formation à la Wild Code School ?</p>
+                <p class="answer">Responsable de Compte RH.</p>
+                <p class="question">Pourquoi as-tu choisi de faire cette formation ?</p>
+                <p class="answer"> J'ai toujours été attirée pas les métiers du numérique dont la création de site internet.</p>
+                <p class="question">Comment imagines-tu ton avenir professionnel à l'issue de la formation ?</p>
+                <p class="answer">Si j'ai la chance de trouver un employeur, je poursuis la formation en alternance.</p>
+            </div>
+       
+            <button class="accordion grid-items-label3">Compétences</button>
+            <div class="grid-items">
+                <p class="question">Cite trois de tes hard skills :</p>
+                <p class="answer">&rarr;  Le recrutement, le droit du travail et le management.</p>
+                <p class="question">Cite trois de tes soft skills :</p>
+                <p class="answer">&rarr; Le sens de l'organisation, la créativité et l'optimisme.</p>
+            </div>
+
+            <button class="accordion grid-items-label4">Fun</button>
+            <div class="grid-items">
+                <p class="question">Quels sont tes principaux centres d'intérêt</p>
+                <p class="answer">&rarr; Les voyages, la décoration, la lecture (developpement personnel), Netflix.</p>
+                <p class="question">Trois choses que tu détestes le plus au monde ?</p>
+                <p class="answer">&rarr; Les insectes, l'injustice, quand les magasins sont fermés.</p>
+                <p class="question">Quel est le personnage (réel ou fictif) auquel tu t'identifies le plus (pense à tes séries préférées par exemple) ?</p>
+                <figure class="perso">
+                    <img src="./assets/brook.jpg" alt="Brook Davis" id="character">
+                    <figcaption class="persoLegend">Brook Davis</figcaption>
+                </figure>
+            </div>
+
+            <button class="accordion grid-items-label5">Contacts</button>
+            <div class="grid-items">
+                <ul id="conteneurLogoSNS">
+                <li><a href="https://www.linkedin.com/in/stécie-bien-aimé-aab50b8b/" target='_blank'><img src="./assets/240px-LinkedIn_logo_initials.png" alt="logo linkedin" class="logoSNS"></a></li>
+                <li><a href="https://github.com/stecieb" target='_blank'><img src="./assets/480px-Octicons-mark-github.svg.png" alt="logo Github" class="logoSNS"></a></li>
+                </ul>
+            </div>
+
+    </section>
+
+    <section class="retour">
+        <h2 class="hidden">Fiche profil</h2>
+        <a href="trombino.html"  class="bouton_purple">Retour au trombinoscope</a>
+    </section>
+     <!--Dans le footer : les noms des createurs du site-->
+     <footer>
+        <p class="footer">&copy;Maiwenn Beloy, Stecie Bien-Aimé, Caroline Crépin, Bruno Fernandes, Morgane Lailler</p>
+    </footer>
+    
+    <!-- JavaScript-->
+   <script>
+        
+        /* make the click on the button open the grid-items underneath*/
+        let accordion = document.querySelectorAll(".accordion");
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", (e) => {
+               
+                let sibling = e.target.nextElementSibling;
+
+                let panels = document.querySelectorAll(".grid-items");
+                sibling.classList.toggle('visible');
+
+                for (let j = 0; j < panels.length; j++) {
+                    if (panels[j] !== sibling) {
+                        panels[j].className = 'grid-items';
+                      
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

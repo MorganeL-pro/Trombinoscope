@@ -1,174 +1,178 @@
-
 /*========== @media > 768px =========*/
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+header {
+  flex-direction: row;
+  padding-top: 15px;
+  padding-left: 10px;
+  align-content: center;
+  align-items: center;
+  border-radius: 0px 0 20px 20px;
+}
 
-  header{
-    flex-direction: row;
-    padding-top: 15px;
-    padding-left: 10px;
-    align-content: center;
-    align-items: center;
-    border-radius: 0px 0 20px 20px;
-  }
+.teamJupiter {
+  text-align: center;
+  margin-left: 25%;
+}
 
-  .teamJupiter {
-    text-align: center;
-    margin-left: 25%;
-  }
+.presentation {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
-  .presentation{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
+.promo {
+  color: white;
+  font-size: 4.7rem;
+}
 
-
-  .promo{
-    color: white;
-    font-size: 4.7rem;
-  }
 /* section profile */
 
-  .profile {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+.profile {
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-  .profile-picture {
-    width: 30%;
-  }
-  
-  q {
-    font-size: 2rem;
-  }
-  
- /* Grid */
+.profile-picture {
+  width: 30%;
+}
+
+.anecdote {
+  text-align: justify;
+}
+
+q {
+  font-size: 2rem;
+}
+
+/* Grid */
 
 .gridAccordion {
-    display:grid;
- }
+  display:grid;
+}
+
 .accordion {
   border: 1px solid var(--dark);
 }
- 
-  /* change grid */
 
-  .gridAccordion {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 70px 1fr;
-  } 
+/* change grid */
 
-  .grid-items-label1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    border-radius: 10px 0 0 0;
-  }
+.gridAccordion {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 70px 1fr;
+} 
 
-  .grid-items-label2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
+.grid-items-label1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-radius: 10px 0 0 0;
+}
 
-  .grid-items-label3 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-  }
+.grid-items-label2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
 
-  .grid-items-label4 {
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-  }
+.grid-items-label3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
 
-  .grid-items-label5 {
-    grid-column: 5 / 6;
-    grid-row: 1 / 2;
-    border-radius: 0 10px 0 0;
-  }
+.grid-items-label4 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
 
-  .grid-items:nth-of-type(1) {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-    text-align: center;
-  }
+.grid-items-label5 {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  border-radius: 0 10px 0 0;
+}
 
-  .grid-items:nth-of-type(2) {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-  }
+.grid-items {
+  border: solid 1px var(--dark);
+}
 
-  .grid-items:nth-of-type(3) {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-    text-align: center;
-  }
+.grid-items:nth-of-type(1) {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  text-align: center;
+}
 
-  .grid-items:nth-of-type(4) {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-  }
-  .grid-items:nth-of-type(5) {
-    grid-column: 1 / 6;
-    grid-row: 2 / 3;
-  }
+.grid-items:nth-of-type(2) {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+}
 
-  #character {
-    width: 15%;
-    order: 2;
-  }
+.grid-items:nth-of-type(3) {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  text-align: center;
+}
 
-  .perso {
-    background-color: var(--light);
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
+.grid-items:nth-of-type(4) {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+}
 
-  #conteneurLogoSNS {
-    flex-direction: row;
-    justify-content: center;
-  }
+.grid-items:nth-of-type(5) {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+}
+
+#character {
+  width: 15%;
+  order: 2;
+}
+
+.perso {
+  background-color: var(--light);
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+#conteneurLogoSNS {
+  flex-direction: row;
+  justify-content: center;
+}
 
 /*===== footer=====*/
 
 
-  footer{
-    text-align:center;
-    bottom:0;
-    width: 100%;
-    display:inline-block;
-    vertical-align:top;
-    border-radius: 20px 20px 0 0;
+footer {
+  text-align:center;
+  bottom:0;
+  width: 100%;
+  display:inline-block;
+  vertical-align:top;
+  border-radius: 20px 20px 0 0;
+}
+
+/*========== @media > 1422px =========*/
+
+@media screen and (min-width: 1422px){
+  body {
+      margin-left: 10%;
+      margin-right: 10%;
   }
 
-
-  /*========== @media > 1442px =========*/
-
-
-  @media screen and (min-width: 1422px){
-      body{
-          margin-left: 10%;
-          margin-right: 10%;
-      }
-
-      .profile-picture {
-        width: 25%;
-      }
+  .profile-picture {
+    width: 25%;
   }
-  
-  /*========== @media > 2050px =========*/
-  
-  
-  @media screen and (min-width: 2050px){
-      body{
-          width: 1435px;
-          margin-left: auto;
-          margin-right: auto;
-      }
-  
+}
+
+/*========== @media > 2050px =========*/
+
+@media screen and (min-width: 2050px){
+  body {
+      width: 1435px;
+      margin-left: auto;
+      margin-right: auto;
   }
+}

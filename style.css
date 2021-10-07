@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
 
-
-
 /* Variables*/
 :root {
   --dark: rgb(58, 28, 64, 0.9);
@@ -19,11 +17,10 @@ body {
   background-position: center;
   background-repeat: repeat-y;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-
 /*=========Style header ==========*/
-
 
 header {
   display: flex;
@@ -50,7 +47,6 @@ header {
 
 /* =============Main section in index.html========== */
 
-
 .centre {
   display: flex;
   flex-direction: column;
@@ -60,7 +56,7 @@ header {
   border-radius: 5px;
 }
 
-.promoTitre{
+.promoTitre {
   text-align: center;
   font-size: 2.5rem;
   color: var(--dark);
@@ -100,17 +96,16 @@ header {
   margin-bottom: 25px;
 }
 
-.bouton_purple:hover{
-  background-color: var(--light);
-  color: var(--dark);
-  border: solid 1px var(--dark);
+.bouton_purple:hover {
+  background-color: rgb(112, 91, 150);
+  transition: 0.4s;
 }
 
-.hidden{ /* Hide h2 for W3C */
+.hidden { /* Hide h2 for W3C */
   display: none;
 }
 
-.retour{
+.retour {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -132,25 +127,27 @@ header {
   height: auto;
   border-radius: 50%;
   margin-bottom: 30px;
-  }
+}
+
+.promo {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: var(--titleFont);
+}
 
 #romain {
    width: 255px; /* Stop Romain's picture to move along with anecdotes in Firefox */
 }
 
-#anecdote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.anecdote {
+.anecdote { /*Style for citation for Romain*/
   font-size: 1.2rem;
   color: var(--dark);
-  text-align: justify;
+  text-align: center;
   padding: 20px;
 }
 
-.anecdoteDiv {
+.anecdoteDiv { /*class special for Romain div anecdotes*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,7 +158,7 @@ header {
   min-width: 350px;
 }
 
-q {
+q { /*style for citations for students*/
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: white;
@@ -170,7 +167,7 @@ q {
   margin-right: 30px;
 }
 
-#buttonAnecdote {
+#buttonAnecdote {  /*input button for anecdotes*/
   width: 200px;
   padding: 10px;
   border-radius: 10px;
@@ -180,6 +177,7 @@ q {
   color: var(--light);
   font-weight: bold;
 }
+
 #buttonAnecdote:hover {
   background-color: #534e77;
   color: white;
@@ -209,7 +207,7 @@ button:hover {
 
 }
 
-/* class visible makes the accordion to show the correct grid-item */
+/* class visible makes the accordion show the correct grid-item */
 
 .visible {
   display: block;
@@ -237,7 +235,7 @@ button:hover {
 
 /* logo contacts */
 
-#conteneurLogoSNS{
+#conteneurLogoSNS {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -263,18 +261,9 @@ button:hover {
   font-weight: bold;
 }
 
-.promo{
-  color: white;
-  font-size: 4rem;
-  text-align: center;
-  font-family: var(--titleFont);
-}
-
-
 /*======style trombino=====*/
 
-
-.formateur{
+.formateur {
   display:flex;
   justify-content: space-around;
   max-width: 600px;
@@ -286,13 +275,13 @@ button:hover {
   align-items: center;
 }
 
-.romain{
+.romain {
   width:80%;
   border-radius: 20px 0 0 20px;
   min-width: 163px;
 }
 
-.legendeRomain{
+.legendeRomain {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 2;
@@ -301,11 +290,10 @@ button:hover {
   margin-right: 50px;
 }
 
-.lienRomain{
+.lienRomain {
   display: flex;
   align-items: stretch;
 }
-
 
 .grid {
   max-width: 1422px;
@@ -313,7 +301,7 @@ button:hover {
   height: auto;  
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 60px;
+  grid-gap: 40px;
   border-radius: 20px;
   background: var(--light);
   margin:4rem auto;
@@ -322,7 +310,7 @@ button:hover {
   min-width: 320px;
 }
 
-.trombino{
+.trombino {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,12 +320,12 @@ button:hover {
   background-color: var(--light);
 }
 
-figure.trombino>a{
+figure.trombino>a {
   display: flex;
   justify-content: center;
 }
 
-.grid_img{
+.grid_img {
   justify-content: center;
   border-radius: 50%;
   width:80%;
@@ -346,13 +334,12 @@ figure.trombino>a{
   margin-bottom: 15px;
 }
 
-.legend{
+.legend {
   font-size: 1rem;
   font-weight:bold;
   color:var(--dark);
   text-align: center;
 }
-
 
 /* ============Footer style=============*/
 
@@ -364,7 +351,7 @@ footer  {
   color: white;
 }
 
-.footer{
+.footer { /* p in the footer*/
   padding: 10px;
   font-size: 0.8rem;
   text-align: center;

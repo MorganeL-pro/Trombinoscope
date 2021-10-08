@@ -16,4 +16,5 @@ body {
     width: 100%;
     padding: 20px;
     border: 0.5px solid var(--dark);
+    background-color : rgb(112, 91, 150);
 }
